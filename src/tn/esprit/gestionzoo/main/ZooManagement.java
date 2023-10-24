@@ -1,7 +1,6 @@
 package tn.esprit.gestionzoo.main;
 
-import tn.esprit.gestionzoo.entities.Animal;
-import tn.esprit.gestionzoo.entities.Zoo;
+import tn.esprit.gestionzoo.entities.*;
 
 public class ZooManagement {
     public static void main(String[] args){
@@ -32,5 +31,22 @@ public class ZooManagement {
 
         Zoo compared = myZoo2.comparerZoo(myZoo2,myZoo);
         System.out.println("the biggest zoo is " + compared.getName());
+
+
+        System.out.println("-------------------------------------------------------");
+        Aquatic aquatic1 = new Aquatic("Fish", "Goldie", 2, true, "Ocean");
+        Terrestrial terrestrial1 = new Terrestrial("Kangaroo", "Joey", 4, true, 2);
+        Dolphin dolphin1 = new Dolphin("Delphinidae", "Finn", 5, true, "Sea", 12.2f);
+        Penguin penguin1 = new Penguin("Spheniscidae", "Waddle", 3, true, "Ocean", 21.7f);
+
+        System.out.println(aquatic1);
+        System.out.println(terrestrial1);
+        System.out.println(dolphin1);
+        System.out.println(penguin1);
+
+        aquatic1.swim();
+        dolphin1.swim();
+        penguin1.swim();
+
     }
 }
