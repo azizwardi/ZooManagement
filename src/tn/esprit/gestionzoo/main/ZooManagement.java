@@ -1,4 +1,7 @@
-import java.util.Scanner;
+package tn.esprit.gestionzoo.main;
+
+import tn.esprit.gestionzoo.entities.Animal;
+import tn.esprit.gestionzoo.entities.Zoo;
 
 public class ZooManagement {
     public static void main(String[] args){
@@ -28,6 +31,6 @@ public class ZooManagement {
         Zoo myZoo2 = new Zoo("mimi", "bizerte");
 
         Zoo compared = myZoo2.comparerZoo(myZoo2,myZoo);
-        System.out.println("the biggest zoo is " + compared.name);
+        System.out.println("the biggest zoo is " + compared.getName());
     }
 }
