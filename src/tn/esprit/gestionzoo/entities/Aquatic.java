@@ -19,4 +19,14 @@ public non-sealed class Aquatic extends Animal {
     public String toString() {
         return super.toString() + ", habitat:" + habitat;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null)
+            return false;
+        if (obj instanceof Aquatic aquatic) {
+            return getName().equals(aquatic.getName()) && getAge() == aquatic.getAge() && habitat.equals(aquatic.habitat);
+        }
+        return false;
+    }
 }

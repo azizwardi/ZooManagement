@@ -3,7 +3,7 @@ package tn.esprit.gestionzoo.main;
 import tn.esprit.gestionzoo.entities.*;
 
 public class ZooManagement {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Animal lion = new Animal("nothing", "Sisi", 100, true);
         Animal dog = new Animal("Canine", "Snoopy", 2, true);
         Zoo myZoo = new Zoo("mimi", "bizerte");
@@ -29,7 +29,7 @@ public class ZooManagement {
 
         Zoo myZoo2 = new Zoo("mimi", "bizerte");
 
-        Zoo compared = myZoo2.comparerZoo(myZoo2,myZoo);
+        Zoo compared = myZoo2.comparerZoo(myZoo2, myZoo);
         System.out.println("the biggest zoo is " + compared.getName());
 
 
@@ -48,5 +48,13 @@ public class ZooManagement {
         dolphin1.swim();
         penguin1.swim();
 
+
+        System.out.println("-------------------------------------------------------");
+        myZoo.addAquaticAnimal(dolphin1);
+        myZoo.addAquaticAnimal(penguin1);
+        System.out.println("La profondeur = " + myZoo.maxPenguinSwimmingDepth());
+        myZoo.displayNumberOfAquaticsByType();
+
+        System.out.println(dolphin1.equals(penguin1));
     }
 }
