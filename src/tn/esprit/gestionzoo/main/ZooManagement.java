@@ -11,8 +11,22 @@ public class ZooManagement {
 
         System.out.println(myZoo);
 
-        System.out.println(myZoo.addAnimal(lion));
-        System.out.println(myZoo.addAnimal(dog));
+        //System.out.println(myZoo.addAnimal(lion));
+        //System.out.println(myZoo.addAnimal(dog));
+
+        try {
+            myZoo.addAnimal(lion);
+            System.out.println("Nombre d'animaux : " + myZoo.getNbrAnimals());
+
+            myZoo.addAnimal(dog);
+            System.out.println("Nombre d'animaux : " +  myZoo.getNbrAnimals());
+
+
+        } catch (ZooFullException e) {
+            System.err.println("Erreur : " + e.getMessage());
+        }catch (InvalidAgeException e) {
+            System.err.println("Erreur d'âge : " + e.getMessage());
+        }
 
         System.out.println(myZoo.searchAnimal(dog));
 
