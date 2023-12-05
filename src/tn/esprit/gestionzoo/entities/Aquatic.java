@@ -1,7 +1,9 @@
 package tn.esprit.gestionzoo.entities;
 
-public non-sealed class Aquatic extends Animal {
+import tn.esprit.gestionzoo.enums.Food;
+import tn.esprit.gestionzoo.interfaces.Carnivore;
 
+public class Aquatic extends Animal implements Carnivore<Food> {
     protected String habitat;
 
 
@@ -28,5 +30,14 @@ public non-sealed class Aquatic extends Animal {
             return getName().equals(aquatic.getName()) && getAge() == aquatic.getAge() && habitat.equals(aquatic.habitat);
         }
         return false;
+    }
+
+    @Override
+    public void eatMeat(Food food) {
+        if (food == Food.MEAT || food == Food.BOTH) {
+            System.out.println("Aquatic is eating meat");
+        } else {
+            System.out.println("Aquatic does not eat meat");
+        }
     }
 }

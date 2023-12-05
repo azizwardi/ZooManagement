@@ -1,5 +1,8 @@
 package tn.esprit.gestionzoo.entities;
 
+import tn.esprit.gestionzoo.execeptions.InvalidAgeException;
+import tn.esprit.gestionzoo.execeptions.ZooFullException;
+
 public class Zoo {
     private Animal[] animals;
     private String name;
