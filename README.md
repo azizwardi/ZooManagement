@@ -1,19 +1,17 @@
-# Zoo management system 
+# Zoo Management System
 
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li>
-      <a href="#-description">Description</a>
+    <li><a href="#-description">Description</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
     <li><a href="#-features">Features</a></li>
     <li><a href="#-structure">Structure</a></li>
-        <li>
-      <a href="#-getting-started">Getting Started</a>
+    <li><a href="#-getting-started">Getting Started</a>
       <ul>
         <li><a href="#installation-">Installation</a></li>
       </ul>
@@ -23,44 +21,51 @@
 
 ## 📝 Description  
 
-Welcome to the Zoo Management System, developed as part of a Java course! This Java-based project simplifies the organization and handling of animals in a zoo. It demonstrates key Java concepts while providing a practical and user-friendly solution for efficient zoo management.
+Welcome to the Zoo Management System, a Java-based project developed as part of a Java course! This system simplifies the organization and handling of animals in a zoo, showcasing key Java concepts while providing an efficient and user-friendly solution for zoo management.
 
 ### Built With
 
 * [Java](https://dev.java/)
 
 ## 🌟 Features 
- ### 1. Animal Handling :
- Create, display and manage Animal Instances.
-### 2. Zoo Operations :
- Control Animals: Add, remove, find, and see animals in the zoo easily.
-### 3. Error Handling
- Fix Problems: Deal with age and zoo size issues to keep everything running smoothly.
-### 4. Animal Types and Behavior
- Different Kinds of Animals: Handle various animal types (Aquatic, Terrestrial).
-### 5. Behavioral Actions
- Special Things Animals Do: Make animals do specific actions, like swimming for aquatic animals and other unique behaviors.
-### 6. Interactions
- How Animals Get Along: See and manage how animals talk, play, or live together in the zoo.
- 
+
+1. **Animal Handling:**
+   - Create, display, and manage Animal Instances.
+
+2. **Zoo Operations:**
+   - Control Animals: Add, remove, find, and view animals in the zoo easily.
+
+3. **Error Handling:**
+   - Fix Problems: Handle age and zoo size issues for smooth operation.
+
+4. **Animal Types and Behavior:**
+   - Different Kinds of Animals: Handle various animal types (Aquatic, Terrestrial).
+
+5. **Behavioral Actions:**
+   - Special Things Animals Do: Trigger specific actions like swimming for aquatic animals and other unique behaviors.
+
+6. **Interactions:**
+   - How Animals Get Along: Manage how animals interact, play, or live together in the zoo.
+
 ## 🗂 Structure 
-### 1.Entities Folder (src/entities)
-Holds Different Things: This folder contains classes that represent various things (like animals or parts of the zoo) in the zoo management system.
 
-### 2.Enums Folder (src/enums)
-Sorts Animal Diets: This folder has lists that define what animals eat, categorizing them as meat-eaters 🥩, plant-eaters 🌱, or both 🥕 in the zoo system.
+1. **Entities Folder (src/entities):**
+   - Holds Different Things: Classes representing various entities in the zoo management system.
 
-### 3.Exceptions Folder (src/exceptions)
-Handles Mistakes: This folder contains special classes that deal with problems like wrong ages or when the zoo is full in the zoo management system.
+2. **Enums Folder (src/enums):**
+   - Sorts Animal Diets: Lists categorizing animal diets as meat-eaters 🥩, plant-eaters 🌱, or both 🥕.
 
-### 4.Interfaces Folder (src/interfaces)
-Defines Animal Diets: This folder contains plans that describe what animals eat, like meat 🥩, plants 🌱, or both 🥕, used to organize them in the zoo system.
+3. **Exceptions Folder (src/exceptions):**
+   - Handles Mistakes: Classes dealing with issues like wrong ages or when the zoo is full.
 
-### 5.Main ZooManagement Folder (src/main/ZooManagement)
-Starts Everything: This folder is the starting point of the zoo management system. It's where the system begins its work.
+4. **Interfaces Folder (src/interfaces):**
+   - Defines Animal Diets: Plans describing what animals eat, organizing them in the zoo system.
 
+5. **Main ZooManagement Folder (src/main/ZooManagement):**
+   - Starts Everything: The starting point of the zoo management system.
 
 ## 🛠️ Getting Started  
+
 ### Installation :
 Java Development Kit (JDK) version 17.
-[YOU CAN INSTALL IT FROM HERE](https://www.oracle.com/java/technologies/downloads/#java17).
+[Install JDK 17](https://www.oracle.com/java/technologies/downloads/#java17).
