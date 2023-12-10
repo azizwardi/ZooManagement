@@ -61,7 +61,7 @@ Welcome to the Zoo Management System! This Java-based project, developed as part
 4. **Interfaces Folder (src/tn/esprit/gestionzoo/interfaces):**
    - Definition of animal diets: Interfaces organizing animals based on their dietary needs.
 
-5. **Main ZooManagement Folder (src/main/ZooManagement):**
+5. **Main ZooManagement Folder (src/tn/esprit/gestionzoo/main/ZooManagement):**
    - The entry point of the zoo management system.
 
 ## Getting Started  
