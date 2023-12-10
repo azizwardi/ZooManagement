@@ -49,16 +49,16 @@ Welcome to the Zoo Management System! This Java-based project, developed as part
 
 ## Structure 
 
-1. **Entities Folder (src/entities):**
+1. **Entities Folder (src/tn/esprit/gestionzoo/entities):**
    - Repository for key entities within the system.
 
-2. **Enums Folder (src/enums):**
+2. **Enums Folder (src/tn/esprit/gestionzoo/enums):**
    - Categorization of animal diets: Meat-eaters 🥩, plant-eaters 🌱, or both 🥕.
 
-3. **Exceptions Folder (src/exceptions):**
+3. **Exceptions Folder (src/tn/esprit/gestionzoo/exceptions):**
    - Exception handling: Classes addressing issues like incorrect ages or zoo full conditions.
 
-4. **Interfaces Folder (src/interfaces):**
+4. **Interfaces Folder (src/tn/esprit/gestionzoo/interfaces):**
    - Definition of animal diets: Interfaces organizing animals based on their dietary needs.
 
 5. **Main ZooManagement Folder (src/main/ZooManagement):**
