@@ -31,5 +31,26 @@ public class Main {
         D.displayDepartement();
         System.out.println(D.rechercherDepartement("cs"));
         System.out.println(D.trierDepartementById());
+
+        System.out.println("-------------------------------------------------");
+        AffectationHashMap HM = new AffectationHashMap();
+        Employe e2 = new Employe(1, "chef", "secteur", "cs", 20);
+        Employe e3 = new Employe(2, "weld", "chef", "dust", 13);
+        Employe e4 = new Employe(3, "wardi", "aziz", "A2", 9);
+        Departement d1 = new Departement(1, "J24", 2);
+        Departement d2 = new Departement(2, "J25", 2);
+
+        HM.ajouterEmployeDepartement(e2, d1);
+        HM.ajouterEmployeDepartement(e3, d1);
+        HM.ajouterEmployeDepartement(e4, d2);
+        HM.afficherEmployesEtDepartements();
+        HM.supprimerEmploye(e2);
+        HM.afficherEmployes();
+        HM.afficherDepartments();
+        System.out.println(HM.rechercherEmploye(e2));
+        System.out.println(HM.rechercherDepartement(d1));
+        System.out.println(HM.trierMap());
+        HM.supprimerEmployeEtDepartement(e3, d2);
+        HM.afficherEmployesEtDepartements();
     }
 }
