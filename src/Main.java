@@ -32,7 +32,7 @@ public class Main {
         System.out.println(D.rechercherDepartement("cs"));
         System.out.println(D.trierDepartementById());
 
-        System.out.println("-------------------------------------------------");
+        System.out.println("-----------------------11--------------------------");
         AffectationHashMap HM = new AffectationHashMap();
         Employe e2 = new Employe(1, "chef", "secteur", "cs", 20);
         Employe e3 = new Employe(2, "weld", "chef", "dust", 13);
@@ -52,5 +52,20 @@ public class Main {
         System.out.println(HM.trierMap());
         HM.supprimerEmployeEtDepartement(e3, d2);
         HM.afficherEmployesEtDepartements();
+
+        System.out.println("-------------------------12------------------------");
+        List<Etudiant> etudiants = new ArrayList<>();
+        StudentManagement EM = new EtudiantManagement();
+        Etudiant e1 = new Etudiant(1, "Hafedh", 21);
+        Etudiant e2 = new Etudiant(2, "Majdi", 24);
+        Consumer<Etudiant> con = etudiant -> System.out.println(etudiant.toString());
+        Predicate<Etudiant> pre = etudiant -> etudiant.getNom().startsWith("H"); 
+        Function<Etudiant, String> fun = Etudiant::getNom;
+        Supplier<Etudiant> sup = Etudiant::new;
+        Comparator<Etudiant> comp = Comparator.comparingInt(Etudiant::getId);
+
+        EM.addEtudiant(etudiants, e2);
+        EM.addEtudiant(etudiants, e1);
+
     }
 }
