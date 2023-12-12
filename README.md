@@ -53,7 +53,7 @@ Welcome to the Zoo Management System! This Java-based project, developed as part
    - Repository for key entities within the system.
 
 2. **Enums Folder (src/tn/esprit/gestionzoo/enums):**
-   - Categorization of animal diets: Meat-eaters 🥩, plant-eaters 🌱, or both 🥕.
+   - Categorization of animal diets: Meat-eaters , plant-eaters , or both .
 
 3. **Exceptions Folder (src/tn/esprit/gestionzoo/exceptions):**
    - Exception handling: Classes addressing issues like incorrect ages or zoo full conditions.
